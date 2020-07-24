@@ -80,6 +80,15 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
+    - name: install-program
+      run: cd openwrt && git clone https://github.com/tuanqing/install-program package/install-program
+      
+    - name: lua-maxminddb
+      run: cd openwrt && git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
+      
+    - name: luci-app-vssr
+      run: cd openwrt && git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
+      
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
