@@ -79,9 +79,6 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-
-    - name: install-program
-      run: cd openwrt && git clone https://github.com/tuanqing/install-program package/install-program
       
     - name: lua-maxminddb
       run: cd openwrt && git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
