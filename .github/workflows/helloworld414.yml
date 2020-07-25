@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: K2P4.14 Hello World
+name: K2P HelloWorld(4.14内核)
 
 on:
   repository_dispatch:
